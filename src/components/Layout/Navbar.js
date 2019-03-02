@@ -43,7 +43,7 @@ const NavLink = styled.li`
   }
 `
 
-const Header = () => (
+const Navbar = () => (
   <Fragment>
     <NavStyles role="navigation">
       <ul className="HeaderGroup">
@@ -72,4 +72,4 @@ const Header = () => (
   </Fragment>
 )
 
-export default Header
+export default Navbar
