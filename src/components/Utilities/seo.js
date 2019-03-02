@@ -60,6 +60,14 @@ function SEO({ description, lang, meta, keywords, title }) {
                   : []
               )
               .concat(meta)}
+            link={[
+              {
+                rel: "shortcut icon",
+                type: "image/png",
+                href:
+                  "https://res.cloudinary.com/rosborne/image/upload/v1551052058/Portfolio_Assets/favicon.ico",
+              },
+            ]}
           />
         )
       }}

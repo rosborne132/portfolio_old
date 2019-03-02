@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Asap", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  background-image: linear-gradient(
+    to right top,
+    #334d50,
+    #4d6c67,
+    #6f8c7b,
+    #9aac8f,
+    #cbcaa5
+  );
+  text-align: center;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 8vmin;
+}
+
+h2 {
+  font-size: 6vmin;
+}
+
+h3 {
+  font-size: 5.3vmin;
+}
+
+p {
+  font-size: 4vmin;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 30px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://res.cloudinary.com/rosborne/image/upload/v1551052058/Portfolio_Assets/hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+header p {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+header {
+  padding: 12% 0;
+}
+
+section {
+  min-height: 200px;
+  padding: 6% 0;
+}
+
+.about {
+  text-align: left;
+  background-color: #61ccaa;
+  color: #fff;
+}
+
+.about h2 {
+  padding: 10px 0;
+}
+
+.about p {
+  padding: 10px 0;
+}
+
+.cards {
+  display: grid;
+  grid-gap: 20px;
+}
+
+a:focus {
+  color: #61ccaa;
+}
+
+.fab,
+.fas {
+  color: #fff;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.contact-wrapper {
+  width: 50%;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  border-radius: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  h1 {
+    font-size: 9vmin;
+  }
+  h2 {
+    font-size: 6vmin;
+  }
+  h3 {
+    font-size: 3.5vmin;
+  }
+  p {
+    font-size: 2.5vmin;
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-wrapper {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
