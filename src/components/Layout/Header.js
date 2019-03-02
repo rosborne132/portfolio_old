@@ -22,13 +22,24 @@ const NavLink = styled.li`
   padding: 0 3vw;
   cursor: pointer;
 
-  .nav-link {
-    color: #fff;
-    text-decoration: none;
+  :hover {
+    color: #b2b2b2;
   }
 
-  .nav-link:hover {
-    color: #b2b2b2;
+  @media only screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media only screen and (min-width: 1224px) {
+    font-size: 22px;
+  }
+
+  @media only screen and (min-width: 1824px) {
+    font-size: 24px;
+  }
+
+  @media only screen and (min-width: 2440px) {
+    font-size: 26px;
   }
 `
 
@@ -37,18 +48,23 @@ const Header = () => (
     <NavStyles role="navigation">
       <ul className="HeaderGroup">
         <NavLink>
+          <Link to="home" smooth={true}>
+            Home
+          </Link>
+        </NavLink>
+        <NavLink>
           <Link to="about" smooth={true}>
-            <a className="nav-link">About</a>
+            About
           </Link>
         </NavLink>
         <NavLink>
           <Link to="work" smooth={true}>
-            <a className="nav-link">Work</a>
+            Work
           </Link>
         </NavLink>
         <NavLink>
           <Link to="contact" smooth={true}>
-            <a className="nav-link">Contact</a>
+            Contact
           </Link>
         </NavLink>
       </ul>

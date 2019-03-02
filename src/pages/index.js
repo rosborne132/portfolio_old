@@ -8,9 +8,11 @@ import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO
+      keywords={[`gatsby`, `application`, `react`, "portfolio", "frontend"]}
+    />
 
-    <header>
+    <header id="home">
       <h1>Robert Osborne</h1>
       <p>
         Front-end Developer from Portland Oregon looking for new exciting
@@ -66,10 +68,9 @@ const IndexPage = () => (
           image={
             "https://res.cloudinary.com/rosborne/image/upload/v1551052059/Portfolio_Assets/quiz_app.png"
           }
-          alt={"styledOUI"}
-          title={"styledOUI"}
-          desc={`An app to test your Paper Mario knowledge! Quiz based off of the
-              Chuck Quizmo’s quiz show in Paper Mario for N64.`}
+          alt={"quiz_app"}
+          title={"Chuck Quizmo's Quiz App"}
+          desc={`An app based off of the Chuck Quizmo’s quiz show in Paper Mario for N64.`}
           skills={"Tech: HTML, CSS, jQuery"}
           githubLink={"https://github.com/rosborne132/quiz-app"}
           webLink={"https://rosborne132.github.io/quiz-app/"}
