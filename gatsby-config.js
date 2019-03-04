@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Robert Osborne | Front End Portfolio`,
+    title: `Front End Portfolio`,
     description: `Simple portfolio to showcase some things I've been working on through my Thinkful experience as well as my side projects! `,
     author: `Robert Osborne`,
   },

@@ -5,9 +5,9 @@ const CardStyles = styled.div`
   background-color: #fff;
   color: #000;
   width: 100%;
+  margin: 15px auto;
   position: relative;
   perspective: 1000px;
-  margin-top: 15px;
   padding-bottom: 50px;
   transition: all 0.3s ease;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);

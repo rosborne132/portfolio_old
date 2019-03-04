@@ -22,19 +22,19 @@ body {
 }
 
 h1 {
-  font-size: 8vmin;
+  font-size: 32px;
 }
 
 h2 {
-  font-size: 6vmin;
+  font-size: 28px;
 }
 
 h3 {
-  font-size: 5.3vmin;
+  font-size: 26px;
 }
 
 p {
-  font-size: 4vmin;
+  font-size: 18px;
 }
 
 .container {
@@ -111,24 +111,36 @@ a:focus {
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
-  h1 {
-    font-size: 9vmin;
-  }
-  h2 {
-    font-size: 6vmin;
-  }
-  h3 {
-    font-size: 3.5vmin;
-  }
-  p {
-    font-size: 2.5vmin;
-  }
+  /* h1 {
+        font-size: 9vmin;
+    }
+    h2 {
+        font-size: 6vmin;
+    }
+    h3 {
+        font-size: 3.5vmin;
+    }
+    p {
+        font-size: 2.5vmin;
+    } */
   .cards {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media only screen and (min-width: 1224px) {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 24px;
+  }
   .cards {
     grid-template-columns: repeat(3, 1fr);
   }

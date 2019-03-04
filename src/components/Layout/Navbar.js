@@ -17,7 +17,7 @@ const NavStyles = styled.nav`
 `
 
 const NavLink = styled.li`
-  font-size: 16px;
+  font-size: 14px;
   display: inline;
   padding: 0 3vw;
   cursor: pointer;
@@ -27,19 +27,19 @@ const NavLink = styled.li`
   }
 
   @media only screen and (min-width: 768px) {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   @media only screen and (min-width: 1224px) {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   @media only screen and (min-width: 1824px) {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   @media only screen and (min-width: 2440px) {
-    font-size: 26px;
+    font-size: 22px;
   }
 `
 

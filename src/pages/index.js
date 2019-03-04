@@ -9,6 +9,7 @@ import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
 const IndexPage = () => (
   <Layout>
     <SEO
+      title="Robert Osborne"
       keywords={[`gatsby`, `application`, `react`, "portfolio", "frontend"]}
     />
 
@@ -21,7 +22,7 @@ const IndexPage = () => (
     </header>
 
     <section id="about" className="about">
-      <div class="container">
+      <div className="container">
         <h2>Hello! My name is Robert but you can call me Rob. :)</h2>
         <p>
           I am an IT Service Technician with a passion for front-end
@@ -38,7 +39,7 @@ const IndexPage = () => (
     </section>
 
     <section id="work">
-      <div class="cards container">
+      <div className="cards container">
         <Card
           image={
             "https://res.cloudinary.com/rosborne/image/upload/v1551277668/Portfolio_Assets/tcg_search.png"
@@ -79,27 +80,27 @@ const IndexPage = () => (
     </section>
 
     <section id="contact">
-      <div class="contact-wrapper">
+      <div className="contact-wrapper">
         <a
           target="_blank"
           href="https://www.linkedin.com/in/robert-osborne-037857100/"
           rel="noopener noreferrer"
         >
-          <i class="icon fab fa-linkedin" />
+          <i className="icon fab fa-linkedin" />
         </a>
         <a
           target="_blank"
           href="https://github.com/rosborne132"
           rel="noopener noreferrer"
         >
-          <i class="icon fab fa-github-square" />
+          <i className="icon fab fa-github-square" />
         </a>
         <a
           target="_blank"
           href="mailto:ozborne132@gmail.com"
           rel="noopener noreferrer"
         >
-          <i class="icon fas fa-envelope-square" />
+          <i className="icon fas fa-envelope-square" />
         </a>
       </div>
     </section>
