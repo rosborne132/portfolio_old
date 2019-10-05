@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Front End Portfolio`,
+    title: `Portfolio`,
     description: `Simple portfolio to showcase some things I've been working on through my Thinkful experience as well as my side projects! `,
     author: `Robert Osborne`,
   },
@@ -26,8 +26,5 @@ module.exports = {
         display: `minimal-ui`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
   ],
 }

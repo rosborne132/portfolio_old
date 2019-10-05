@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import React from "react"
 import styled from "styled-components"
 import { Link } from "react-scroll"
 
@@ -8,16 +8,12 @@ const NavStyles = styled.nav`
   left: 0;
   right: 0;
   z-index: 10;
-  width: 100%;
   padding: 1% 0;
-  margin: 0 auto;
-  font-size: 2.3vh;
   background-color: #000;
-  color: #fff;
 `
 
 const NavLink = styled.li`
-  font-size: 14px;
+  font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
   display: inline;
   padding: 0 3vw;
   cursor: pointer;
@@ -25,51 +21,27 @@ const NavLink = styled.li`
   :hover {
     color: #b2b2b2;
   }
-
-  @media only screen and (min-width: 768px) {
-    font-size: 16px;
-  }
-
-  @media only screen and (min-width: 1224px) {
-    font-size: 18px;
-  }
-
-  @media only screen and (min-width: 1824px) {
-    font-size: 20px;
-  }
-
-  @media only screen and (min-width: 2440px) {
-    font-size: 22px;
-  }
 `
 
+const links = ["home", "about", "work", "contact"]
+
+const capitalize = (s) => {
+  if (typeof s !== 'string') return ''
+  return s.charAt(0).toUpperCase() + s.slice(1)
+}
+
 const Navbar = () => (
-  <Fragment>
     <NavStyles role="navigation">
       <ul className="HeaderGroup">
-        <NavLink>
-          <Link to="home" smooth={true}>
-            Home
-          </Link>
-        </NavLink>
-        <NavLink>
-          <Link to="about" smooth={true}>
-            About
-          </Link>
-        </NavLink>
-        <NavLink>
-          <Link to="work" smooth={true}>
-            Work
-          </Link>
-        </NavLink>
-        <NavLink>
-          <Link to="contact" smooth={true}>
-            Contact
-          </Link>
-        </NavLink>
+        { links.map(link => (
+          <NavLink key={link}>
+            <Link to={link} smooth={true}>
+              { capitalize(link) }
+            </Link>
+          </NavLink>
+        ))}
       </ul>
     </NavStyles>
-  </Fragment>
 )
 
 export default Navbar

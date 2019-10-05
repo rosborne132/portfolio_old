@@ -1,31 +1,12 @@
-import React, { Fragment } from "react"
+import React from "react"
 import styled from "styled-components"
 
 const FooterStyles = styled.footer`
-  width: 100%;
   padding: 1% 0;
+  font-size: calc(16px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
   margin: 0 auto;
-  font-size: 16px;
-  background-color: #000;
-  color: #fff;
-
-  @media only screen and (min-width: 1224px) {
-    font-size: 20px;
-  }
-
-  @media only screen and (min-width: 1824px) {
-    font-size: 22px;
-  }
-
-  @media only screen and (min-width: 2440px) {
-    font-size: 24px;
-  }
 `
 
-const Footer = () => (
-  <Fragment>
-    <FooterStyles role="contentinfo">© 2019</FooterStyles>
-  </Fragment>
-)
+const Footer = () => <FooterStyles role="contentinfo">© 2019</FooterStyles>
 
 export default Footer
