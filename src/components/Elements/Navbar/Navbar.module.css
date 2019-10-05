@@ -1,0 +1,20 @@
+.Nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 1% 0;
+    background-color: #000;
+}
+
+.NavLink {
+    font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
+    display: inline;
+    padding: 0 3vw;
+    cursor: pointer;
+}
+
+.NavLink:hover {
+    color: #b2b2b2;  
+}

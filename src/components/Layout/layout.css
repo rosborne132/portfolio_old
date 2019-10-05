@@ -7,7 +7,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-family: "Asap", sans-serif;
-  font-size: 20px;
+  font-size: calc(20px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
   color: #fff;
   background: linear-gradient(
     to right top,
@@ -22,19 +22,19 @@ body {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: calc(34px + (34 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 h2 {
-  font-size: 28px;
+  font-size: calc(28px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 h3 {
-  font-size: 26px;
+  font-size: calc(26px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 p {
-  font-size: 18px;
+  font-size: calc(18px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .container {
@@ -60,11 +60,6 @@ header p {
 
 header {
   padding: 12% 0;
-}
-
-section {
-  min-height: 200px;
-  padding: 6% 0;
 }
 
 .about {
@@ -116,18 +111,6 @@ a:focus {
 }
 
 @media only screen and (min-width: 1224px) {
-  h1 {
-    font-size: 36px;
-  }
-  h2 {
-    font-size: 32px;
-  }
-  h3 {
-    font-size: 30px;
-  }
-  p {
-    font-size: 24px;
-  }
   .cards {
     grid-template-columns: repeat(3, 1fr);
   }

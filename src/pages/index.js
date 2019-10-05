@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../components/Layout/layout"
 import Card from "../components/Elements/Card"
 import SEO from "../components/Utilities/seo"
+import Section from "../components/Elements/Section"
 
 import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
 
@@ -21,7 +22,7 @@ const IndexPage = () => (
       </p>
     </header>
 
-    <section id="about" className="about">
+    <Section id="about" className="about">
       <div className="container">
         <h2>Hello! My name is Robert but you can call me Rob. :)</h2>
         <p>
@@ -36,9 +37,9 @@ const IndexPage = () => (
           games. Much like code, I like to see how my favorite things are made.
         </p>
       </div>
-    </section>
+    </Section>
 
-    <section id="work">
+    <Section id="work">
       <div className="cards container">
         <Card
           image={
@@ -77,9 +78,9 @@ const IndexPage = () => (
           webLink={"https://rosborne132.github.io/quiz-app/"}
         />
       </div>
-    </section>
+    </Section>
 
-    <section id="contact">
+    <Section id="contact">
       <div className="contact-wrapper">
         <a
           target="_blank"
@@ -103,7 +104,7 @@ const IndexPage = () => (
           <i className="icon fas fa-envelope-square" />
         </a>
       </div>
-    </section>
+    </Section>
   </Layout>
 )
 
