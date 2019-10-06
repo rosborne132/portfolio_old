@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-scroll"
 
-import { Nav, NavLink} from "./Navbar.module.css"
+import { Nav, NavLink } from "./Navbar.module.css"
 
 const links = ["home", "about", "work", "contact"]
 

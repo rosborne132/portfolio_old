@@ -66,7 +66,11 @@ const IndexPage = () => (
         { icons.map(icon => {
           const { link, iconClass} = icon
           return (
-            <Icon key={link} link={link} iconClass={iconClass}/>
+            <Icon 
+              key={link} 
+              link={link} 
+              iconClass={iconClass}
+            />
           )
         })}
       </div>
