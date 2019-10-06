@@ -1,0 +1,19 @@
+a:focus {
+    color: #61ccaa;
+}
+
+a:hover {
+    cursor: pointer;
+}
+  
+.fab,
+.fas {
+  color: #fff;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.IconStyle:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}

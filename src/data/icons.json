@@ -1,0 +1,16 @@
+{
+    "icons": [
+        {
+            "link": "https://www.linkedin.com/in/robert-osborne-037857100/",
+            "iconClass": "fab fa-linkedin"
+        },
+        {
+            "link": "https://github.com/rosborne132",
+            "iconClass": "fab fa-github-square"
+        },
+        {
+            "link": "mailto:ozborne132@gmail.com",
+            "iconClass": "fas fa-envelope-square"
+        }
+    ]
+}

@@ -4,8 +4,9 @@ import Layout from "../components/Layout/layout"
 import Card from "../components/Elements/Card"
 import SEO from "../components/Utilities/seo"
 import Section from "../components/Elements/Section"
+import Icon from "../components/Elements/Icon/Icon"
 
-import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+import { projects, icons } from "../data"
 
 const IndexPage = () => (
   <Layout>
@@ -39,70 +40,35 @@ const IndexPage = () => (
       </div>
     </Section>
 
+
     <Section id="work">
       <div className="cards container">
-        <Card
-          image={
-            "https://res.cloudinary.com/rosborne/image/upload/v1551277668/Portfolio_Assets/tcg_search.png"
-          }
-          alt={"TCG_search"}
-          title={"TCG Search"}
-          desc={`Search through every Pokemon card ever released.`}
-          skills={"Tech: HTML, CSS, jQuery, JavaScript"}
-          githubLink={"https://github.com/rosborne132/tcg_search"}
-          webLink={"https://rosborne132.github.io/tcg_search/"}
-        />
-        <Card
-          image={
-            "https://res.cloudinary.com/rosborne/image/upload/v1551053134/Portfolio_Assets/styledOUI.png"
-          }
-          alt={"styledOUI"}
-          title={"styledOUI"}
-          desc={
-            "An app to showcase some elements created within the UI library."
-          }
-          skills={"Tech: React, Webpack, styled-components"}
-          githubLink={"https://github.com/rosborne132/styledoui"}
-          webLink={"https://rosborne132.github.io/styledoui-demo/?no-cache=1"}
-        />
-
-        <Card
-          image={
-            "https://res.cloudinary.com/rosborne/image/upload/v1551052059/Portfolio_Assets/quiz_app.png"
-          }
-          alt={"quiz_app"}
-          title={"Chuck Quizmo's Quiz App"}
-          desc={`An app based off of the Chuck Quizmo’s quiz show in Paper Mario for N64.`}
-          skills={"Tech: HTML, CSS, jQuery"}
-          githubLink={"https://github.com/rosborne132/quiz-app"}
-          webLink={"https://rosborne132.github.io/quiz-app/"}
-        />
+        { projects.map(project => {
+          const { imageUrl, imageAlt, title, desc, skills, githubLink, webLink } = project
+          return (
+            <Card
+              key={imageAlt}
+              image={imageUrl}
+              alt={imageAlt}
+              title={title}
+              desc={desc}
+              skills={skills}
+              githubLink={githubLink}
+              webLink={webLink}
+            />
+          )
+        })}
       </div>
     </Section>
 
     <Section id="contact">
       <div className="contact-wrapper">
-        <a
-          target="_blank"
-          href="https://www.linkedin.com/in/robert-osborne-037857100/"
-          rel="noopener noreferrer"
-        >
-          <i className="icon fab fa-linkedin" />
-        </a>
-        <a
-          target="_blank"
-          href="https://github.com/rosborne132"
-          rel="noopener noreferrer"
-        >
-          <i className="icon fab fa-github-square" />
-        </a>
-        <a
-          target="_blank"
-          href="mailto:ozborne132@gmail.com"
-          rel="noopener noreferrer"
-        >
-          <i className="icon fas fa-envelope-square" />
-        </a>
+        { icons.map(icon => {
+          const { link, iconClass} = icon
+          return (
+            <Icon key={link} link={link} iconClass={iconClass}/>
+          )
+        })}
       </div>
     </Section>
   </Layout>
