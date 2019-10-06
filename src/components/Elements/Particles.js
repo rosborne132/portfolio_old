@@ -56,7 +56,7 @@ const ParticleEffect = () => {
                 right: 0,
                 bottom: 0,
                 left: 0,
-                zIndex: 0,
+                zIndex: -1,
             }}
         />
     )
