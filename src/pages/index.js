@@ -1,10 +1,12 @@
 import React from "react"
 
 import Layout from "../components/Layout/layout"
-import Card from "../components/Elements/Card"
+import { Card, ProjectCard } from "../components/Elements/Card"
 import SEO from "../components/Utilities/seo"
 import Section from "../components/Elements/Section"
 import Icon from "../components/Elements/Icon/Icon"
+import Grid from "../components/Utilities/Grid/Grid"
+import Container from "../components/Utilities/Container/Container"
 
 import { projects, icons } from "../data"
 
@@ -24,7 +26,7 @@ const IndexPage = () => (
     </header>
 
     <Section id="about" className="about">
-      <div className="container">
+      <Container width={80}>
         <h2>Hello! My name is Robert but you can call me Rob. :)</h2>
         <p>
           I am an IT Service Technician with a passion for front-end
@@ -37,12 +39,11 @@ const IndexPage = () => (
           rainy days I love to spend my time playing and taking apart video
           games. Much like code, I like to see how my favorite things are made.
         </p>
-      </div>
+      </Container>
     </Section>
 
-
     <Section id="work">
-      <div className="cards container">
+      <Grid width={80}>
         { projects.map(project => {
           const { imageUrl, imageAlt, title, desc, skills, githubLink, webLink } = project
           return (
@@ -58,7 +59,22 @@ const IndexPage = () => (
             />
           )
         })}
-      </div>
+
+        { projects.map(project => {
+          const { imageUrl, imageAlt, title, desc, linkIcons, techIcons } = project
+          return (
+            <ProjectCard
+              key={imageAlt}
+              image={imageUrl}
+              alt={imageAlt}
+              title={title}
+              desc={desc}
+              linkIcons={linkIcons}
+              techIcons={techIcons}
+            />
+          )
+        })}
+      </Grid>
     </Section>
 
     <Section id="contact">

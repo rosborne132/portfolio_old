@@ -9,8 +9,12 @@
             "iconClass": "fab fa-github-square"
         },
         {
-            "link": "mailto:ozborne132@gmail.com",
-            "iconClass": "fas fa-envelope-square"
+            "link": "https://twitter.com/OproOffical",
+            "iconClass": "fab fa-twitter-square"
+        },
+        {
+            "link": "https://www.instagram.com/beyondrob/",
+            "iconClass": "fab fa-instagram"
         }
     ]
 }

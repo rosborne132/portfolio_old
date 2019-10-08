@@ -1,6 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 
+import Icon from "../Elements/Icon/Icon"
+
 const CardStyles = styled.div`
   background-color: #fff;
   color: #000;
@@ -95,4 +97,19 @@ const Card = props => (
   </CardStyles>
 )
 
-export default Card
+const ProjectCard = props => (
+  <div>
+    <h3>{props.title}</h3>
+    <p>{props.desc}</p>
+    <h4>Tech:</h4>
+
+    { props.techIcons.map(link => <i key={link} className={link}></i>)}
+
+    { props.linkIcons.map(webLink => {
+      const { iconClass, link } = webLink
+      return <Icon key={link} iconClass={iconClass} link={link}/>
+    })}
+  </div>
+)
+
+export { Card, ProjectCard }

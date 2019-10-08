@@ -1,0 +1,17 @@
+.Wrapper {
+    display: grid;
+    grid-gap: 20px;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .Wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media only screen and (min-width: 1224px) {
+    .Wrapper {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }

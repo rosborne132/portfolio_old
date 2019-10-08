@@ -7,7 +7,23 @@
             "desc": "Search through every Pokemon card ever released.",
             "skills": "Tech: HTML, CSS, jQuery, JavaScript",
             "githubLink": "https://github.com/rosborne132/tcg_search",
-            "webLink": "https://rosborne132.github.io/tcg_search/"
+            "webLink": "https://rosborne132.github.io/tcg_search/",
+            "techIcons": [
+                "devicon-html5-plain",
+                "devicon-css3-plain",
+                "devicon-javascript-plain",
+                "devicon-jquery-plain"
+            ],
+            "linkIcons": [
+                {
+                    "link": "https://rosborne132.github.io/tcg_search",
+                    "iconClass": "fa fa-code"
+                },
+                {
+                    "link": "https://github.com/rosborne132/tcg_search",
+                    "iconClass": "fab fa-github"
+                }
+            ]
         },
         {
             "imageUrl": "https://res.cloudinary.com/rosborne/image/upload/v1551053134/Portfolio_Assets/styledOUI.png",
@@ -16,7 +32,22 @@
             "desc": "An app to showcase some elements created within the UI library.",
             "skills": "Tech: React, Webpack, styled-components",
             "githubLink": "https://github.com/rosborne132/styledoui",
-            "webLink": "https://rosborne132.github.io/styledoui-demo/?no-cache=1"
+            "webLink": "https://rosborne132.github.io/styledoui-demo",
+            "techIcons": [
+                "devicon-react-original",
+                "devicon-webpack-plain",
+                "devicon-css3-plain"
+            ],
+            "linkIcons": [
+                {
+                    "link": "https://rosborne132.github.io/styledoui-demo",
+                    "iconClass": "fa fa-code"
+                },
+                {
+                    "link": "https://github.com/rosborne132/styledoui",
+                    "iconClass": "fab fa-github"
+                }
+            ]
         },
         {
             "imageUrl": "https://res.cloudinary.com/rosborne/image/upload/v1551052059/Portfolio_Assets/quiz_app.png",
@@ -25,7 +56,22 @@
             "desc": "An app based off of the Chuck Quizmo’s quiz show in Paper Mario for N64.",
             "skills": "Tech: HTML, CSS, jQuery",
             "githubLink": "https://github.com/rosborne132/quiz-app",
-            "webLink": "https://rosborne132.github.io/quiz-app/"
+            "webLink": "https://rosborne132.github.io/quiz-app/",
+            "techIcons": [
+                "devicon-html5-plain",
+                "devicon-css3-plain",
+                "devicon-jquery-plain"
+            ],
+            "linkIcons": [
+                {
+                    "link": "https://rosborne132.github.io/quiz-app",
+                    "iconClass": "fa fa-code"
+                },
+                {
+                    "link": "https://github.com/rosborne132/quiz-app",
+                    "iconClass": "fab fa-github"
+                }
+            ]
         }
     ]
 }
