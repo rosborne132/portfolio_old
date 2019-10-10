@@ -1,14 +1,16 @@
 import React from "react"
 
 import Layout from "../components/Layout/layout"
-import { Card, ProjectCard } from "../components/Elements/Card"
+import { ProjectCard } from "../components/Elements/Card/Card"
 import SEO from "../components/Utilities/seo"
 import Section from "../components/Elements/Section"
 import Icon from "../components/Elements/Icon/Icon"
 import Grid from "../components/Utilities/Grid/Grid"
-import Container from "../components/Utilities/Container/Container"
+import Container from "../components/Utilities/Container"
 
 import { projects, icons } from "../data"
+
+const width = 80
 
 const IndexPage = () => (
   <Layout>
@@ -18,78 +20,66 @@ const IndexPage = () => (
     />
 
     <header id="home">
-      <h1>Robert Osborne</h1>
-      <p>
-        Front-end Developer from Portland Oregon looking for new exciting
-        opportunities.
-      </p>
+      <Container width={width}>
+        <h1>Robert Osborne</h1>
+        <p>Software Engineer in the Portland area.</p>
+      </Container>
     </header>
 
-    <Section id="about" className="about">
-      <Container width={80}>
-        <h2>Hello! My name is Robert but you can call me Rob. :)</h2>
+    <Section id="about" style={{ backgroundColor: "#61ccaa"}}>
+      <Container width={width} style={{ textAlign: "left" }}>
+        <h2>About</h2>
         <p>
-          I am an IT Service Technician with a passion for front-end
-          development. I love listening to music and getting heads down in code.
+          I am a software engineer and I love listening to music while getting heads down in code.
           I find creating reusable code extremely satisfying, so my current
-          interests are in typescript and design systems.
+          interests are in open source and design systems.
         </p>
         <p>
           Outside of coding, I like to play guitar and go on long walks. On
           rainy days I love to spend my time playing and taking apart video
-          games. Much like code, I like to see how my favorite things are made.
+          games. Much like code, I like to see how my favorite things work.
         </p>
       </Container>
     </Section>
 
     <Section id="work">
-      <Grid width={80}>
+      <Container width={width} style={{ textAlign: "left" }}>
+        <h2>Projects</h2>
+      </Container>
+      <Grid width={width}>
         { projects.map(project => {
-          const { imageUrl, imageAlt, title, desc, skills, githubLink, webLink } = project
-          return (
-            <Card
-              key={imageAlt}
-              image={imageUrl}
-              alt={imageAlt}
-              title={title}
-              desc={desc}
-              skills={skills}
-              githubLink={githubLink}
-              webLink={webLink}
-            />
-          )
-        })}
-
-        { projects.map(project => {
-          const { imageUrl, imageAlt, title, desc, linkIcons, techIcons } = project
+          const { imageUrl, imageAlt, title, desc, linkIcons, techIcons, projectBackground } = project
           return (
             <ProjectCard
-              key={imageAlt}
+              key={title}
               image={imageUrl}
               alt={imageAlt}
               title={title}
               desc={desc}
               linkIcons={linkIcons}
               techIcons={techIcons}
+              projectBackground={projectBackground}
             />
           )
         })}
       </Grid>
     </Section>
 
-    <Section id="contact">
-      <div className="contact-wrapper">
+    <Section>
+      <Container width={width} style={{ textAlign: "left" }}>
+        <h2>Contact</h2>
+        <p>Get in touch on other platforms</p>
         { icons.map(icon => {
-          const { link, iconClass} = icon
-          return (
-            <Icon 
-              key={link} 
-              link={link} 
-              iconClass={iconClass}
-            />
-          )
-        })}
-      </div>
+            const { link, iconClass} = icon
+            return (
+              <Icon 
+                key={link} 
+                link={link} 
+                iconClass={iconClass}
+              />
+            )
+          })}
+      </Container>
     </Section>
   </Layout>
 )

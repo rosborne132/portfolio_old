@@ -27,47 +27,18 @@ h1 {
 
 h2 {
   font-size: calc(28px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  margin-bottom: 20px;
 }
 
 h3 {
-  font-size: calc(26px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(24px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 p {
   font-size: calc(18px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-}
-
-header {
-  position: relative;
-}
-
-header p {
-  width: 80%;
-  text-align: center;
-  margin: 0 auto;
+  padding: 10px 0;
 }
 
 header {
   padding: 12% 0;
-}
-
-.about {
-  text-align: left;
-  background-color: #61ccaa;
-  color: #fff;
-}
-
-.about h2 {
-  padding: 10px 0;
-}
-
-.about p {
-  padding: 10px 0;
-}
-
-.contact-wrapper {
-  width: 250px;
-  margin: 0 auto;
-  border: 2px solid #fff;
-  border-radius: 30px;
 }

@@ -1,7 +1,7 @@
 import React from "react"
 
-const Section = ({ className, children, id }) => (
-    <section id={id} className={className} style={{ minHeight: 200, padding: "6% 0"}}>
+const Section = ({ className, children, id, style }) => (
+    <section id={id} className={className} style={{ minHeight: 200, padding: "6% 0", ...style}}>
         { children }
     </section>
 )

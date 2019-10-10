@@ -1,0 +1,21 @@
+.CardHeader {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.CardBody {
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.CardBody:hover {
+    transform: scale(1.03);
+}
+
+.CardStyle {
+    text-align: left;
+    padding-top: 30px;
+}
