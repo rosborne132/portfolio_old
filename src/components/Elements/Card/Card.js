@@ -6,7 +6,6 @@ import { CardHeader, CardBody, CardStyle } from "./Card.module.css"
 const ProjectCard = props => (
   <div className={CardBody} style={ props.projectBackground }>
     <span className={CardHeader}>
-      {props.title}
       <h3>{props.title}</h3>
       <span>
         { props.linkIcons.map(webLink => {
