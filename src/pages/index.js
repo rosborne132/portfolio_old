@@ -65,7 +65,7 @@ const IndexPage = () => (
       </Grid>
     </Section>
 
-    <Section>
+    <Section id="contact">
       <Container width={width} style={{ textAlign: "left" }}>
         <h2>Contact</h2>
         <p>Get in touch on other platforms</p>
