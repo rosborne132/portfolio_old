@@ -34,9 +34,8 @@ const IndexPage = () => (
         <h2>About</h2>
         <p>
           I am a software engineer and I love listening to music while getting
-          heads down in code. I find creating reusable code extremely
-          satisfying, so my current interests are in open source and design
-          systems.
+          heads down in code. My current interests are in Next.js and
+          Serverless.
         </p>
         <p>
           Outside of coding, I like to play guitar and go on long walks. On
