@@ -10,7 +10,7 @@ import {
   SEO,
 } from "../components"
 
-import { Layout } from "../components/Layout"
+import { Layout } from "../components/Layout/Layout"
 
 import { projects, icons } from "../data"
 
@@ -49,7 +49,7 @@ const IndexPage = () => (
     <Section id="certications">
       <Container width={width} style={{ textAlign: "left" }}>
         <h2>Certications</h2>
-        <p>See my current certications! :)</p>
+        <p>See all of my current certications! :)</p>
         <div>
           <Badge
             altTest="AWS Developer Cert"

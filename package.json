@@ -34,8 +34,7 @@
     "develop": "gatsby develop -H 0.0.0.0 -p 8000",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "serve": "gatsby serve"
   },
   "repository": {
     "type": "git",
