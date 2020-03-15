@@ -1,3 +1,3 @@
 export * from "./Elements"
-export * from "./Layout/Layout"
+export * from "./Layout"
 export * from "./Utilities"
