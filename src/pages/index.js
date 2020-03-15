@@ -5,11 +5,12 @@ import {
   Container,
   Grid,
   Icon,
-  Layout,
   ProjectCard,
   Section,
   SEO,
 } from "../components"
+
+import { Layout } from "../components/Layout"
 
 import { projects, icons } from "../data"
 
