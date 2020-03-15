@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 
 import { Footer, Navbar, ParticleEffect } from "../Elements"
-import "./layout.css"
+import "./Layout.css"
 
 export const Layout = memo(({ children }) => (
   <>
