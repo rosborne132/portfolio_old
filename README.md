@@ -7,7 +7,7 @@ This portfolio showcases some things I've been working on through my Thinkful ex
 This portfolio was made using:
 
 - Gatsby.js
-- Styled components
+- CSS Modules
 - Netlify
 
 I hope you enjoy!

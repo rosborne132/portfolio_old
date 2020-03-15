@@ -1,12 +1,15 @@
 import React from "react"
 
-import Layout from "../components/Layout/layout"
-import { ProjectCard } from "../components/Elements/Card/Card"
-import SEO from "../components/Utilities/seo"
-import Section from "../components/Elements/Section"
-import Icon from "../components/Elements/Icon/Icon"
-import Grid from "../components/Utilities/Grid/Grid"
-import Container from "../components/Utilities/Container"
+import {
+  Badge,
+  Container,
+  Grid,
+  Icon,
+  Layout,
+  ProjectCard,
+  Section,
+  SEO,
+} from "../components"
 
 import { projects, icons } from "../data"
 
@@ -26,13 +29,14 @@ const IndexPage = () => (
       </Container>
     </header>
 
-    <Section id="about" style={{ backgroundColor: "#61ccaa"}}>
+    <Section id="about" style={{ backgroundColor: "#61ccaa" }}>
       <Container width={width} style={{ textAlign: "left" }}>
         <h2>About</h2>
         <p>
-          I am a software engineer and I love listening to music while getting heads down in code.
-          I find creating reusable code extremely satisfying, so my current
-          interests are in open source and design systems.
+          I am a software engineer and I love listening to music while getting
+          heads down in code. I find creating reusable code extremely
+          satisfying, so my current interests are in open source and design
+          systems.
         </p>
         <p>
           Outside of coding, I like to play guitar and go on long walks. On
@@ -42,14 +46,35 @@ const IndexPage = () => (
       </Container>
     </Section>
 
+    <Section id="certications">
+      <Container width={width} style={{ textAlign: "left" }}>
+        <h2>Certications</h2>
+        <p>See my current certications! :)</p>
+        <div>
+          <Badge
+            altTest="AWS Developer Cert"
+            badgeLink="https://www.certmetrics.com/amazon/public/badge.aspx?i=2&t=c&d=2020-03-07&ci=AWS00487144"
+            imgLink="https://d1.awsstatic.com/training-and-certification/Certification%20Badges/AWS-Certified_Developer_Associate_512x512.6d5f0ad35de66966c96f8e408e4fd919c1a2d753.png"
+          />
+        </div>
+      </Container>
+    </Section>
+
     <Section id="work">
       <Container width={width} style={{ textAlign: "left" }}>
         <h2>Projects</h2>
       </Container>
       <Grid width={width}>
-        { projects.map(project => {
-          const { imageUrl, imageAlt, title, desc, linkIcons, techIcons, projectBackground } = project
-          return (
+        {projects.map(
+          ({
+            imageUrl,
+            imageAlt,
+            title,
+            desc,
+            linkIcons,
+            techIcons,
+            projectBackground,
+          }) => (
             <ProjectCard
               key={title}
               image={imageUrl}
@@ -61,7 +86,7 @@ const IndexPage = () => (
               projectBackground={projectBackground}
             />
           )
-        })}
+        )}
       </Grid>
     </Section>
 
@@ -69,16 +94,9 @@ const IndexPage = () => (
       <Container width={width} style={{ textAlign: "left" }}>
         <h2>Contact</h2>
         <p>Get in touch on other platforms</p>
-        { icons.map(icon => {
-            const { link, iconClass} = icon
-            return (
-              <Icon 
-                key={link} 
-                link={link} 
-                iconClass={iconClass}
-              />
-            )
-          })}
+        {icons.map(({ link, iconClass }) => (
+          <Icon key={link} link={link} iconClass={iconClass} />
+        ))}
       </Container>
     </Section>
   </Layout>

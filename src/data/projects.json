@@ -1,71 +1,115 @@
 {
-    "projects": [
+  "projects": [
+    {
+      "title": "TCG Search",
+      "desc": "Search through every Pokemon card ever released.",
+      "projectBackground": {
+        "background": "linear-gradient(171deg, rgba(34,195,62,0.65) 60%, rgba(45,253,246,1) 100%)"
+      },
+      "techIcons": [
+        "devicon-css3-plain",
+        "devicon-html5-plain",
+        "devicon-javascript-plain",
+        "devicon-jquery-plain"
+      ],
+      "linkIcons": [
         {
-            "title": "TCG Search",
-            "desc": "Search through every Pokemon card ever released.",
-            "projectBackground": {
-                "background": "linear-gradient(171deg, rgba(34,195,62,0.65) 60%, rgba(45,253,246,1) 100%)"
-            },
-            "techIcons": [
-                "devicon-html5-plain",
-                "devicon-css3-plain",
-                "devicon-javascript-plain",
-                "devicon-jquery-plain"
-            ],
-            "linkIcons": [
-                { "link": "https://rosborne132.github.io/tcg_search", "iconClass": "fa fa-code" },
-                { "link": "https://github.com/rosborne132/tcg_search", "iconClass": "fab fa-github" }
-            ]
+          "link": "https://rosborne132.github.io/tcg_search",
+          "iconClass": "fa fa-code"
         },
         {
-            "title": "styledOUI",
-            "desc": "An app to showcase some elements created within the UI library.",
-            "projectBackground": {
-                "background": "linear-gradient(171deg, rgba(195,128,34,0.65) 60%, rgba(253,187,45,1) 100%)"
-            },
-            "techIcons": [
-                "devicon-react-original",
-                "devicon-webpack-plain",
-                "devicon-css3-plain"
-            ],
-            "linkIcons": [
-                { "link": "https://rosborne132.github.io/styledoui-demo", "iconClass": "fa fa-code" },
-                { "link": "https://github.com/rosborne132/styledoui", "iconClass": "fab fa-github" }
-            ]
-        },
-        {
-            "title": "Quizmo's Quiz App",
-            "desc": "An app based off of the Chuck Quizmo’s quiz show in Paper Mario for N64.",
-            "projectBackground": {
-                "background": "linear-gradient(171deg, rgba(34,122,195,0.65) 60%, rgba(45,62,253,1) 100%)"
-            },
-            "techIcons": [
-                "devicon-html5-plain",
-                "devicon-css3-plain",
-                "devicon-jquery-plain"
-            ],
-            "linkIcons": [
-                { "link": "https://rosborne132.github.io/quiz-app", "iconClass": "fa fa-code" },
-                { "link": "https://github.com/rosborne132/quiz-app", "iconClass": "fab fa-github" }
-            ]
-        },
-        {
-            "title": "Backlogger",
-            "desc": "An app for tracking the games you are currently playing.",
-            "projectBackground": {
-                "background": "linear-gradient(171deg, rgba(121,121,121,0.65) 60%, rgba(0,0,0,1) 100%)"
-            },
-            "techIcons": [
-                "devicon-react-original",
-                "devicon-nodejs-plain",
-                "devicon-postgresql-plain",
-                "devicon-css3-plain",
-                "devicon-heroku-original"
-            ],
-            "linkIcons": [
-                { "link": "https://backlogger.net", "iconClass": "fa fa-code" },
-                { "link": "https://github.com/rosborne132/backlogger-frontend", "iconClass": "fab fa-github" }
-            ]
+          "link": "https://github.com/rosborne132/tcg_search",
+          "iconClass": "fab fa-github"
         }
-    ]
+      ]
+    },
+    {
+      "title": "styledOUI",
+      "desc": "An app to showcase some elements created within the UI library.",
+      "projectBackground": {
+        "background": "linear-gradient(171deg, rgba(195,128,34,0.65) 60%, rgba(253,187,45,1) 100%)"
+      },
+      "techIcons": [
+        "devicon-css3-plain",
+        "devicon-react-original",
+        "devicon-webpack-plain"
+      ],
+      "linkIcons": [
+        {
+          "link": "https://rosborne132.github.io/styledoui-demo",
+          "iconClass": "fa fa-code"
+        },
+        {
+          "link": "https://github.com/rosborne132/styledoui",
+          "iconClass": "fab fa-github"
+        }
+      ]
+    },
+    {
+      "title": "Quizmo's Quiz App",
+      "desc": "An app based off of the Chuck Quizmo’s quiz show in Paper Mario for N64.",
+      "projectBackground": {
+        "background": "linear-gradient(171deg, rgba(34,122,195,0.65) 60%, rgba(45,62,253,1) 100%)"
+      },
+      "techIcons": [
+        "devicon-css3-plain",
+        "devicon-html5-plain",
+        "devicon-jquery-plain"
+      ],
+      "linkIcons": [
+        {
+          "link": "https://rosborne132.github.io/quiz-app",
+          "iconClass": "fa fa-code"
+        },
+        {
+          "link": "https://github.com/rosborne132/quiz-app",
+          "iconClass": "fab fa-github"
+        }
+      ]
+    },
+    {
+      "title": "Backlogger",
+      "desc": "An app for tracking the games you are currently playing.",
+      "projectBackground": {
+        "background": "linear-gradient(171deg, rgba(121,121,121,0.65) 60%, rgba(0,0,0,1) 100%)"
+      },
+      "techIcons": [
+        "devicon-css3-plain",
+        "devicon-heroku-original",
+        "devicon-nodejs-plain",
+        "devicon-postgresql-plain",
+        "devicon-react-original"
+      ],
+      "linkIcons": [
+        { "link": "https://backlogger.net", "iconClass": "fa fa-code" },
+        {
+          "link": "https://github.com/rosborne132/backlogger-frontend",
+          "iconClass": "fab fa-github"
+        }
+      ]
+    },
+    {
+      "title": "Shopping List App",
+      "desc": "A CRUD app for keeping track of your shopping list items",
+      "projectBackground": {
+        "background": "linear-gradient(171deg, rgba(34,122,195,0.65) 60%, rgba(45,62,253,1) 100%)"
+      },
+      "techIcons": [
+        "devicon-amazonwebservices-original",
+        "devicon-css3-plain",
+        "devicon-react-original",
+        "devicon-typescript-plain"
+      ],
+      "linkIcons": [
+        {
+          "link": "https://www.shopping-list-app.com",
+          "iconClass": "fa fa-code"
+        },
+        {
+          "link": "https://github.com/rosborne132/shopping-list-app",
+          "iconClass": "fab fa-github"
+        }
+      ]
+    }
+  ]
 }
