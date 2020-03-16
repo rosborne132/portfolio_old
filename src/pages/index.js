@@ -11,8 +11,6 @@ import {
   SEO,
 } from "../components"
 
-import { Layout } from "../components/Layout/Layout"
-
 import { projects, icons } from "../data"
 
 const width = 80
