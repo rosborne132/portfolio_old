@@ -5,6 +5,7 @@ import {
   Container,
   Grid,
   Icon,
+  Layout,
   ProjectCard,
   Section,
   SEO,
