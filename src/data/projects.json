@@ -32,12 +32,11 @@
       "techIcons": [
         "devicon-babel-plain",
         "devicon-css3-plain",
-        "devicon-react-original",
-        "devicon-typescript-plain"
+        "devicon-react-original"
       ],
       "linkIcons": [
         {
-          "link": "https://styledoui.now.sh",
+          "link": "https://styledoui.rosborne132.now.sh",
           "iconClass": "fa fa-code"
         },
         {
