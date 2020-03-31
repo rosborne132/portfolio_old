@@ -3,6 +3,6 @@ import { FooterStyles } from "./Footer.module.css"
 
 export const Footer = memo(() => (
   <footer role="contentinfo" className={FooterStyles}>
-    © 2019
+    © 2020
   </footer>
 ))
