@@ -28,7 +28,7 @@
         "react-particles-js": "^2.7.0",
         "react-scroll": "^1.7.14",
         "styled-components": "^4.4.0",
-        "styledoui": "0.1.21"
+        "styledoui": "^0.1.22"
     },
     "devDependencies": {
         "eslint-config-react-app": "^5.0.2",
