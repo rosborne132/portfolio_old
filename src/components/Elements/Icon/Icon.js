@@ -1,9 +1,18 @@
 import React, { memo } from "react"
-import { fab, fas, IconStyle } from "./Icon.module.css"
-import "../../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+import { IconStyle } from "./Icon.module.css"
+import classnames from "classnames"
+import { Icon as SocialIcon } from "styledoui"
 
-export const Icon = memo(({ link, iconClass }) => (
-  <a target="_blank" href={`${link}`} rel="noopener noreferrer">
-    <i className={`${fas} ${fab} ${IconStyle} ${iconClass}`} />
-  </a>
-))
+export const Icon = memo(({ link, icon }) => {
+    if (icon === undefined) return
+
+    return (
+        <a target="_blank" href={`${link}`} rel="noopener noreferrer">
+            <SocialIcon
+                className={classnames(IconStyle)}
+                size="l2"
+                icon={icon}
+            />
+        </a>
+    )
+})

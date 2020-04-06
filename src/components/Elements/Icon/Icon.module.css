@@ -1,17 +1,14 @@
 a:focus {
-    color: #61ccaa;
+  color: #61ccaa;
 }
 
 a:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
-  
-.fab,
-.fas {
+
+.IconStyle {
   color: #fff;
-  font-size: calc(30px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-  padding-right: 20px;
-  display: inline;
+  margin-right: 10px;
 }
 
 .IconStyle:hover {

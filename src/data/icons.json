@@ -2,19 +2,19 @@
     "icons": [
         {
             "link": "https://www.linkedin.com/in/robert-osborne-037857100/",
-            "iconClass": "fab fa-linkedin"
+            "icon": "linkedin"
         },
         {
             "link": "https://github.com/rosborne132",
-            "iconClass": "fab fa-github-square"
+            "icon": "github"
         },
         {
-            "link": "https://twitter.com/OproOffical",
-            "iconClass": "fab fa-twitter-square"
+            "link": "https://twitter.com/rosborne95",
+            "icon": "twitter"
         },
         {
             "link": "https://www.instagram.com/beyondrob/",
-            "iconClass": "fab fa-instagram"
+            "icon": "instagram"
         }
     ]
 }
