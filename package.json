@@ -1,48 +1,52 @@
 {
-    "name": "portfolio",
-    "private": true,
-    "description": "Tech portfolio",
-    "version": "0.1.0",
-    "author": "Robert Osborne",
-    "license": "MIT",
-    "scripts": {
-        "build": "gatsby build",
-        "develop": "gatsby develop -H 0.0.0.0 -p 8000",
-        "format": "prettier --write src/**/*.{js,jsx}",
-        "start": "npm run develop",
-        "serve": "gatsby serve"
-    },
-    "dependencies": {
-        "classnames": "^2.2.6",
-        "gatsby": "^2.23.4",
-        "gatsby-image": "^2.4.7",
-        "gatsby-plugin-manifest": "^2.4.11",
-        "gatsby-plugin-offline": "^3.2.10",
-        "gatsby-plugin-react-helmet": "^3.3.4",
-        "gatsby-plugin-sharp": "^2.6.11",
-        "gatsby-source-filesystem": "^2.3.11",
-        "prop-types": "^15.7.2",
-        "react": "^16.10.2",
-        "react-dom": "^16.10.2",
-        "react-helmet": "^5.2.1",
-        "react-particles-js": "^2.7.0",
-        "react-scroll": "^1.7.14",
-        "styled-components": "^4.4.0",
-        "styledoui": "^0.1.22"
-    },
-    "devDependencies": {
-        "eslint-config-react-app": "^5.0.2",
-        "husky": "^3.1.0",
-        "prettier": "^1.5",
-        "pretty-quick": "^2.0.1"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "pretty-quick --staged --pattern '**/*.*js'"
-        }
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/rosborne132/portfolio"
+  "name": "portfolio",
+  "private": true,
+  "description": "Tech portfolio",
+  "version": "0.1.0",
+  "author": "Robert Osborne",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop -H 0.0.0.0 -p 8000",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "gatsby": "^2.23.4",
+    "gatsby-image": "^2.4.7",
+    "gatsby-plugin-manifest": "^2.4.11",
+    "gatsby-plugin-offline": "^3.2.10",
+    "gatsby-plugin-react-helmet": "^3.3.4",
+    "gatsby-plugin-sharp": "^2.6.11",
+    "gatsby-source-filesystem": "^2.3.11",
+    "prop-types": "^15.7.2",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-helmet": "^5.2.1",
+    "react-particles-js": "^2.7.0",
+    "react-scroll": "^1.7.14",
+    "styled-components": "^4.4.0",
+    "styledoui": "^0.1.22",
+    "snyk": "^1.361.3"
+  },
+  "devDependencies": {
+    "eslint-config-react-app": "^5.0.2",
+    "husky": "^3.1.0",
+    "prettier": "^1.5",
+    "pretty-quick": "^2.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged --pattern '**/*.*js'"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rosborne132/portfolio"
+  },
+  "snyk": true
 }
